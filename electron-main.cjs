@@ -74,7 +74,7 @@ async function extractText(filePath, extension) {
       // so OCR is only invoked when native extraction is effectively empty.
       if (text.replace(/\s/g, '').length >= 120) return text;
       const screenshots = await parser.getScreenshot({ scale: 2, imageDataUrl: false });
-      const tempDirectory = await fs.mkdtemp(path.join(os.tmpdir(), 'ia-document-manager-ocr-'));
+      const tempDirectory = await fs.mkdtemp(path.join(os.tmpdir(), 'infrachat-ocr-'));
       try {
         const tessdataPath = path.join(__dirname, 'resources', 'tessdata');
         const tesseractPath = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe';

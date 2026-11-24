@@ -173,7 +173,7 @@ export function Chat() {
               <div className="absolute inset-0 rounded-full border-2 border-blue-500/20 blur-sm"></div>
             </div>
             <div className="text-center space-y-3">
-               <h3 className="text-2xl font-bold text-zinc-300"><TypingText text="IA Document Manager" enabled={hasOpened && settings?.animateOnOpen !== false} /></h3>
+               <h3 className="text-2xl font-bold text-zinc-300"><TypingText text="InfraChat" enabled={hasOpened && settings?.animateOnOpen !== false} /></h3>
                <p className="text-sm leading-relaxed text-zinc-400">
                  <TypingText
                    text={`Faça perguntas sobre VPNs, servidores, IPs, topologias e firewall. As respostas usam o acervo da empresa selecionada com ${settings?.provider === 'groq' ? settings.groqModel || 'Groq' : settings?.ollamaModel || 'Ollama'}.`}

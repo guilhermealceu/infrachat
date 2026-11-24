@@ -2,7 +2,7 @@
 
 Assistente desktop que responde perguntas sobre a **documentação de infraestrutura de cada empresa**: "qual o IP do firewall da filial X?", "onde fica o backup do servidor Y?". Por padrão roda com IA local, e os documentos não saem da sua máquina.
 
-> 📸 _Print do chat_
+![Pergunta respondida com base na documentação da empresa](docs/chat.png)
 
 ## Sobre
 
@@ -16,6 +16,11 @@ Quem atende várias empresas acumula pastas de documentação: diagramas, planil
 - **Mapa de topologia** da infraestrutura
 - **Provedores de IA**: Ollama local (padrão) ou Groq, com a chave guardada criptografada no sistema
 - Funciona com pastas sincronizadas do OneDrive ou do SharePoint
+
+## Telas
+
+![Documentos lidos e dados extraídos de uma empresa](docs/empresa.png)
+<sub>Documentos lidos e dados extraídos de uma empresa</sub>
 
 ## Requisitos
 
